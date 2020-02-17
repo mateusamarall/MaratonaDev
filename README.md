@@ -1,5 +1,5 @@
 # :computer: MaratonaDev
-MaratonaDev da Rocketseat onde a ideia é criar um site para doação de sangue.
+MaratonaDev da Rocketseat onde a ideia é criar um site para doação de sangue. Piloto Mayk Brito
 
 
 # :rocket: Techs
