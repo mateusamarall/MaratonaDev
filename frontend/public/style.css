@@ -81,6 +81,7 @@ form input{
 }
 form input::placeholder{
   color: #fff;
+  font-size: 14px;
 }
 .donors{
   display: grid;
@@ -124,4 +125,17 @@ section.form.hide{
   visibility: hidden;
   height: 0;
   margin-bottom: -70px;
+}
+@media only screen and (max-width: 800px) {
+  body{
+    margin-top: 90px;
+  }
+  .form{
+    padding: 6px 20px;
+    
+  }
+  form input::placeholder{
+    font-size: 12px;
+  }
+  
 }
