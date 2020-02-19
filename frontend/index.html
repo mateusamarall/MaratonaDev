@@ -22,8 +22,8 @@
     <h2>Entre na lista de doadores</h2>
     <form action="/" method="POST" id="form">
       <input type="text" name="name" id="" placeholder="digite seu nome completo">
-      <input type="email" name="email" id="" placeholder="digite seu email">
-      <input type="text" name="blood" id="" placeholder="digite seu tipo sanguíneo">
+      <input type="email" name="email" id="" placeholder="digite seu email" required>
+      <input type="text" name="blood" id="" placeholder="digite seu tipo sanguíneo" required>
       <button>Quero ajudar</button>
     </form>
   </section>
@@ -33,8 +33,8 @@
      
       {% for donor in donors %}
       <div class="donor">
-        <div class="typeblood">AB+</div>
-        <p>Mateus</p>
+        <div class="typeblood">{{donor.blood}}</div>
+        <p>{{donor.name}}</p>
       </div>
       {%endfor%}
 
