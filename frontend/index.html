@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="/">
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>Doe</title>
 </head>
 <body>
   <header>
-    <img src="MaratonaDev3/logo.png" alt="logo" class="logo">
+    <img src="logo.png" alt="logo" class="logo">
     <h2>A sua doação importa</h2>
     <p>Até 3 vidas com 1 doação</p>
     <p>Mais de 38.000 doações são necessárias todos os dias.</p>
@@ -28,25 +30,14 @@
   <main>
     <h2>Últimos <span>doadores</span></h2>
     <section class="donors">
+     
+      {% for donor in donors %}
       <div class="donor">
         <div class="typeblood">AB+</div>
         <p>Mateus</p>
       </div>
+      {%endfor%}
 
-      <div class="donor">
-        <div class="typeblood">B+</div>
-        <p>Geisa</p>
-      </div>
-
-      <div class="donor">
-        <div class="typeblood">A+</div>
-        <p>Cleiton</p>
-      </div>
-
-      <div class="donor">
-        <div class="typeblood">O+</div>
-        <p>Erick</p>
-      </div>
     </section>
   </main>
   <footer>Com ❤️ Mateus</footer>
